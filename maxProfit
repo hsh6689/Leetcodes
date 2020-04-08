@@ -1,8 +1,10 @@
-//Leetcode 100 day Challenge
-//Day-1
-//https://leetcode.com/explore/challenge/card/30-day-leetcoding-challenge/528/week-1/3287/
-//The question is to get the maximum profit from an arrry 'prices' for which ith element
-//is the price of the given stock on day i. 
+//Leetcode 100 day Challenge Day-1
+
+*/
+  Resource:https://leetcode.com/explore/challenge/card/30-day-leetcoding-challenge/528/week-1/3287/
+  Object: get the maximum profit from an arrry 'prices' for which ith element is 
+          the price of the given stock on day i. 
+/*
 
 class Solution {
 public:
