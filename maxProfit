@@ -4,6 +4,7 @@
   Resource:https://leetcode.com/explore/challenge/card/30-day-leetcoding-challenge/528/week-1/3287/
   Object: get the maximum profit from an arrry 'prices' for which ith element is 
           the price of the given stock on day i. 
+  Running time: O(N), size of the array
 /*
 
 class Solution {
