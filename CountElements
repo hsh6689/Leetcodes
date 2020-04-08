@@ -1,0 +1,35 @@
+//Leetcode 100 day Challenge Day-2
+
+*/
+  Resource:https://leetcode.com/explore/challenge/card/30-day-leetcoding-challenge/528/week-1/3289/
+  Object: Given an integer array arr, count element x such that x + 1 is also in arr.
+          If there're duplicates in arr, count them seperately.
+  Running time:O(N)
+/*
+
+
+class Solution {
+public:
+    int countElements(vector<int>& arr) {
+        //Check constraints
+        if(arr.size()<1 || arr.size()>1000) return 0;
+        //create an empty vector to store counts of each numbers from 0 to 1000
+        int counts[1001]={};
+        int result=0;
+        //loop through the array
+        for(int i=0; i<arr.size(); i++){
+            int num = arr[i];
+            if(num<0||num>1000) return 0;
+            counts[num] += 1 ;
+        }
+        //loop through counts array to counts the results
+        for(int j=0; j<1000;j++){
+            if(counts[j]>0){
+                if(counts[j+1]>0){
+                    result += counts[j];
+                }
+            }            
+        }
+        return result;
+    }
+};
